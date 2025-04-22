@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey</title>
+  <meta name="description" content="Feedback survey">
+  <meta name="keywords" content="survey, feedback, form">
+  <meta name="author" content="Your Name">
+</head>
+<body>
+  <header>
+    <h1>Website Survey</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <label>How did you find my website?</label><br>
+      <input type="radio" name="source" value="search" required> Search Engine<br>
+      <input type="radio" name="source" value="social"> Social Media<br>
+      <input type="radio" name="source" value="friend"> Friend<br><br>
+
+      <label>What did you like? (Select all that apply)</label><br>
+      <input type="checkbox" name="likes" value="design"> Design<br>
+      <input type="checkbox" name="likes" value="content"> Content<br>
+      <input type="checkbox" name="likes" value="ease"> Ease of Use<br><br>
+
+      <label for="feedback">Any suggestions?</label><br>
+      <textarea name="feedback" id="feedback" rows="4" required></textarea><br><br>
+
+      <button type="submit">Submit Survey</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 </p>
+  </footer>
+</body>
+</html>
