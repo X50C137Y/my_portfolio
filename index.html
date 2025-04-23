@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Portfolio - Home</title>
-  <meta name="description" content="Personal Portfolio Homepage">
-  <meta name="keywords" content="portfolio, web developer, projects">
-  <meta name="author" content="Gregory George">
-  <link rel="stylesheet" href="styles.css">
-
-</head>
-<body>
-  <header>
-    <h1>Welcome to My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="survey.html">Survey</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h2>Hello!</h2>
-      <p>My name is <strong>Gregory George</strong>. I'm a front-end web developer and cyber security engineer.</p>
-    </section>
-    <figure>
-      <img src="Profile Portfolio.jpg" alt="My profile photo" width="200">
-      <figcaption>© My Picture</figcaption>
-    </figure>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ysEN5RaKOlA?si=-V13YArRLB4KKu8a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 | All rights reserved.</p>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio - Home</title>
+    <meta name="description" content="Personal Portfolio Homepage" />
+    <meta name="keywords" content="portfolio, web developer, projects" />
+    <meta name="author" content="Gregory George" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="hero-title">Welcome to My Portfolio</h1>
+      <nav class="horizontal-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="survey.html">Survey</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="homepage">
+      <section class="hero-text">
+        <h2>Hello!</h2>
+        <p>
+          <strong>Gregory George</strong> is a front-end web developer and cyber
+          security engineer focused on creating beautiful, responsive websites.
+        </p>
+      </section>
+      <figure class="profile-img">
+        <img src="Profile Portfolio.jpg" alt="My profile photo" width="250" />
+        <figcaption>&copy; My Picture</figcaption>
+      </figure>
+      <div class="video-wrapper">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ysEN5RaKOlA?si=-V13YArRLB4KKu8a"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 | All rights reserved.</p>
+    </footer>
+  </body>
 </html>

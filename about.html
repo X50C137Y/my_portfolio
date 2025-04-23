@@ -1,53 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>About Me</title>
-  <meta name="description" content="Learn more about me.">
-  <meta name="keywords" content="about, skills, biography">
-  <meta name="author" content="Gregory George">
-  <link rel="stylesheet" href="styles.css">
-
-</head>
-<body>
-  <header>
-    <h1>About Me</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="survey.html">Survey</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <article>
-        <h2>Biography</h2>
-        <p>I am a web developer specializing in front-end design.</p>
-      </article>
-
-      <article>
-        <h2>Skills</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <title>About Me</title>
+    <meta name="description" content="Learn more about me." />
+    <meta name="keywords" content="about, skills, biography" />
+    <meta name="author" content="Gregory George" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>About Me</h1>
+      <nav class="horizontal-nav">
         <ul>
-          <li>HTML
-            <ul>
-              <li>Semantic HTML5</li>
-              <li>Forms and Accessibility</li>
-            </ul>
-          </li>
-          <li>CSS</li>
-          <li>JavaScript</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="survey.html">Survey</a></li>
         </ul>
-      </article>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 </p>
-  </footer>
-</body>
+      </nav>
+    </header>
+    <main class="two-column">
+      <section>
+        <article>
+          <h2>Biography</h2>
+          <p>I am a web developer specializing in front-end design.</p>
+        </article>
+        <article>
+          <h2>Skills</h2>
+          <ul>
+            <li>
+              HTML
+              <ul>
+                <li>Semantic HTML5</li>
+                <li>Forms and Accessibility</li>
+              </ul>
+            </li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </article>
+      </section>
+      <aside class="resume-print">
+        <h3>Resume</h3>
+        <p>Available in print view only</p>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; 2025</p>
+    </footer>
+  </body>
 </html>

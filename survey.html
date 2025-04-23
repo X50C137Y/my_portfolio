@@ -1,55 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Survey</title>
-  <meta name="description" content="Feedback survey">
-  <meta name="keywords" content="survey, feedback, form">
-  <meta name="author" content="Gregory George">
-  <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey</title>
+    <meta name="description" content="Feedback survey" />
+    <meta name="keywords" content="survey, feedback, form" />
+    <meta name="author" content="Gregory George" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Website Survey</h1>
+      <nav class="horizontal-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="survey.html" class="active">Survey</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <label>How did you find my website?</label><br />
+        <input type="radio" name="source" value="search" required /> Search
+        Engine<br />
+        <input type="radio" name="source" value="social" /> Social Media<br />
+        <input type="radio" name="source" value="friend" /> Friend<br /><br />
 
-</head>
-<body>
-  <header>
-    <h1>Website Survey</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="survey.html">Survey</a></li>
-      </ul>
-    </nav>
-  </header>
+        <label>What did you like? (Select all that apply)</label><br />
+        <input type="checkbox" name="likes" value="design" /> Design<br />
+        <input type="checkbox" name="likes" value="content" /> Content<br />
+        <input type="checkbox" name="likes" value="ease" /> Ease of Use<br /><br />
 
-  <main>
-    <form action="#" method="post">
-      <label>How did you find my website?</label><br>
-      <input type="radio" name="source" value="search" required> Search Engine<br>
-      <input type="radio" name="source" value="social"> Social Media<br>
-      <input type="radio" name="source" value="friend"> Friend<br><br>
+        <label for="feedback">Any suggestions?</label><br />
+        <textarea name="feedback" id="feedback" rows="4" required></textarea
+        ><br /><br />
 
-      <label>What did you like? (Select all that apply)</label><br>
-      <input type="checkbox" name="likes" value="design"> Design<br>
-      <input type="checkbox" name="likes" value="content"> Content<br>
-      <input type="checkbox" name="likes" value="ease"> Ease of Use<br><br>
-
-      <label for="feedback">Any suggestions?</label><br>
-      <textarea name="feedback" id="feedback" rows="4" required></textarea><br><br>
-
-      <button type="submit">Submit Survey</button>
-    </form>
-  </main>
-  <img src="University.jpg" usemap="#tanzaniaMap" alt="Map of Tanzania" width="600">
-
-  <map name="tanzaniaMap">
-    <area shape="circle" coords="300,220,25" href="https://en.wikipedia.org/wiki/Dodoma" alt="Dodoma" title="Dodoma">
-    <area shape="circle" coords="450,400,25" href="https://en.wikipedia.org/wiki/Dar_es_Salaam" alt="Dar es Salaam" title="Dar es Salaam">
-    <area shape="circle" coords="200,150,25" href="https://en.wikipedia.org/wiki/Arusha" alt="Arusha" title="Arusha">
-  </map>
-  <footer>
-    <p>&copy; 2025 </p>
-  </footer>
-</body>
+        <button type="submit">Submit Survey</button>
+      </form>
+      <img
+        src="University.jpg"
+        usemap="#tanzaniaMap"
+        alt="Map of Tanzania"
+        width="600"
+      />
+      <map name="tanzaniaMap">
+        <area
+          shape="circle"
+          coords="300,220,25"
+          href="https://en.wikipedia.org/wiki/Dodoma"
+          alt="Dodoma"
+          title="Dodoma"
+        />
+        <area
+          shape="circle"
+          coords="450,400,25"
+          href="https://en.wikipedia.org/wiki/Dar_es_Salaam"
+          alt="Dar es Salaam"
+          title="Dar es Salaam"
+        />
+        <area
+          shape="circle"
+          coords="200,150,25"
+          href="https://en.wikipedia.org/wiki/Arusha"
+          alt="Arusha"
+          title="Arusha"
+        />
+      </map>
+    </main>
+    <footer>
+      <p>&copy; 2025</p>
+    </footer>
+  </body>
 </html>
