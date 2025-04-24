@@ -12,6 +12,7 @@
     <header>
       <h1>My Projects</h1>
       <nav class="horizontal-nav">
+        <button id="theme-toggle">Change Theme</button>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Me</a></li>
@@ -23,20 +24,51 @@
     </header>
     <main class="three-column">
       <article>
-        <h2>Project One</h2>
-        <p>A responsive web app using HTML, CSS, and JS.</p>
+        <h2 class="toggle-project">Project One</h2>
+        <p  class="project-details" style="display: none;">A responsive web app using HTML, CSS, and JS.</p>
       </article>
       <article>
-        <h2>Project Two</h2>
-        <p>Interactive portfolio with animations.</p>
+        <h2 class="toggle-project">Project Two</h2>
+        <p  class="project-details" style="display: none;">Interactive portfolio with animations.</p>
       </article>
       <article>
-        <h2>Project Three</h2>
-        <p>A Landing page for my personal business.</p>
+        <h2 class="toggle-project">Project Three</h2>
+        <p  class="project-details" style="display: none;">A Landing page for my personal business.</p>
       </article>
+      <img 
+        src="University.jpg"
+        usemap="#tanzaniaMap"
+        alt="Map of Tanzania"
+        width="600"
+      />
+      <map name="tanzaniaMap">
+        <area
+          shape="circle"
+          coords="300,220,25"
+          href="https://en.wikipedia.org/wiki/Dodoma"
+          alt="Dodoma"
+          title="Dodoma"
+        />
+        <area
+          shape="circle"
+          coords="450,400,25"
+          href="https://en.wikipedia.org/wiki/Dar_es_Salaam"
+          alt="Dar es Salaam"
+          title="Dar es Salaam"
+        />
+        <area
+          shape="circle"
+          coords="200,150,25"
+          href="https://en.wikipedia.org/wiki/Arusha"
+          alt="Arusha"
+          title="Arusha"
+        />
+      </map>
     </main>
     <footer>
       <p>&copy; 2025</p>
     </footer>
+    <script src="scripts.js"></script>
+
   </body>
 </html>
