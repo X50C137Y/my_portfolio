@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Contact Me</title>
-  <meta name="description" content="Contact form page.">
-  <meta name="keywords" content="contact, email, phone">
-  <meta name="author" content="Gregory George">
-  <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Me</title>
+    <meta name="description" content="Contact form page." />
+    <meta name="keywords" content="contact, email, phone" />
+    <meta name="author" content="Gregory George" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Me</h1>
+      <nav class="horizontal-nav">
+        <button id="theme-toggle">Change Theme</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="survey.html">Survey</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form  id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
 
-</head>
-<body>
-  <header>
-    <h1>Contact Me</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="survey.html">Survey</a></li>
-      </ul>
-    </nav>
-  </header>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
 
-  <main>
-    <form action="#" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" />
 
-      <label for="email">email:</label>
-      <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-      <label for="phone">Phone Number:</label>
-      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"><br>
+        <button type="submit">Send Message</button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2025</p>
+    </footer>
+    <script src="scripts.js"></script>
 
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br>
-
-      <button type="submit">Send Message</button>
-    </form>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 </p>
-  </footer>
-</body>
+  </body>
 </html>

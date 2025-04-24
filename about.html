@@ -1,53 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>About Me</title>
-  <meta name="description" content="Learn more about me.">
-  <meta name="keywords" content="about, skills, biography">
-  <meta name="author" content="Gregory George">
-  <link rel="stylesheet" href="styles.css">
-
-</head>
-<body>
-  <header>
-    <h1>About Me</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="survey.html">Survey</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <article>
-        <h2>Biography</h2>
-        <p>I am a web developer specializing in front-end design.</p>
-      </article>
-
-      <article>
-        <h2>Skills</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <title>About Me</title>
+    <meta name="description" content="Learn more about me." />
+    <meta name="keywords" content="about, skills, biography" />
+    <meta name="author" content="Gregory George" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>About Me</h1>
+      <nav class="horizontal-nav">
+        <button id="theme-toggle">Change Theme</button>
         <ul>
-          <li>HTML
-            <ul>
-              <li>Semantic HTML5</li>
-              <li>Forms and Accessibility</li>
-            </ul>
-          </li>
-          <li>CSS</li>
-          <li>JavaScript</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="survey.html">Survey</a></li>
         </ul>
-      </article>
-    </section>
-  </main>
+      </nav>
+    </header>
+    <main class="two-column">
+      <section>
+        <article>
+          <h2>Biography</h2>
+          <p>I’m Gregory George, a visionary Front-End Developer on a mission to build digital experiences that inspire and connect.<br>
+            With a keen eye for design and a deep passion for clean, responsive code, I craft interfaces that bring ideas to life.<br>
+            I believe the web should be fast, accessible, and beautiful for everyone.<br>
+            My vision Is to create intuitive and impactful user experiences that leave a lasting impression on every screen.</p>
+        </article>
+        <article>
+          <h2>Skills</h2>
+          <ul>
+            <li>
+              HTML5
+              <ul>
+                <li>Penetration Testing</li>
+                <li>Computer Forensics</li>
+              </ul>
+            </li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </article>
+      </section>
+      <aside class="resume-print">
+        <h3>Resume</h3>
+        <p>Available in print view only</p>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; 2025</p>
+    </footer>
+    <script src="scripts.js"></script>
 
-  <footer>
-    <p>&copy; 2025 </p>
-  </footer>
-</body>
+  </body>
 </html>
