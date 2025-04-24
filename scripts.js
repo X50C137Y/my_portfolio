@@ -23,11 +23,11 @@ window.addEventListener('DOMContentLoaded', () => {
     let greeting = '';
   
     if (hour < 12) {
-      greeting = 'Good morning 🤗';
+      greeting = 'Good morning, 🤗';
     } else if (hour < 18) {
-      greeting = 'Good afternoon 🤓';
+      greeting = 'Good afternoon, 🤓';
     } else {
-      greeting = 'Good evening 😎';
+      greeting = 'Good evening, 😎';
     }
   
     greetingEl.textContent = greeting;
